@@ -24,7 +24,7 @@ import javax.swing.JTabbedPane;
 import javax.swing.UIManager;
 import javax.swing.filechooser.FileSystemView;
 
-import controlador.AppVideo;
+//import controlador.AppVideo;
 import pulsador.IEncendidoListener;
 import pulsador.Luz;
 
@@ -43,7 +43,7 @@ public class VentanaPrincipalIniciada extends JFrame implements ActionListener {
 	private JButton premium;
 	private JButton logOut;
 	private Luz luz = new Luz();
-	private AppVideo appVideo =  AppVideo.getUnicaInstancia();
+	//private AppVideo appVideo =  AppVideo.getUnicaInstancia();
 	private PanelExplorar explore = new PanelExplorar();
 	private PanelMisListas playlists = new PanelMisListas();
 	private PanelNuevaLista newPlaylist = new PanelNuevaLista();
@@ -148,11 +148,11 @@ public class VentanaPrincipalIniciada extends JFrame implements ActionListener {
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == premium) {
-			appVideo.mejorarCuenta(appVideo.getUsuarioActual());
-			JOptionPane.showMessageDialog(VentanaPrincipalIniciada.this, "Congrats! Your account is now premium", "Premium account", JOptionPane.CLOSED_OPTION);
+			//appVideo.mejorarCuenta(appVideo.getUsuarioActual());
+			JOptionPane.showMessageDialog(VentanaPrincipalIniciada.this, "Congrats! Your account is now premium.", "Premium account", JOptionPane.CLOSED_OPTION);
 		}
 		else if (e.getSource() == logOut) {
-			
+			frame.dispose();
 		}
 	}
 }

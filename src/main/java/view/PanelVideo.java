@@ -26,7 +26,7 @@ public class PanelVideo extends JPanel {
 		
 		JPanel barraInferior = new JPanel();
 		barraInferior.setBackground(UIManager.getColor("Button.background"));
-		barraInferior.setPreferredSize(new Dimension(900, 80));
+		barraInferior.setPreferredSize(new Dimension(900, 90));
 
 		
 		JPanel barraSuperior = new JPanel();
